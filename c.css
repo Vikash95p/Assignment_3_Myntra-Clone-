@@ -1,0 +1,20 @@
+.center-img {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    gap: 20px;
+}
+.office {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.text {
+    width: 60%;
+}
+
+.details {
+    width: 55%;
+    margin-top: 10%;
+}
