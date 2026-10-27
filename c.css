@@ -18,3 +18,9 @@
     width: 55%;
     margin-top: 10%;
 }
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
