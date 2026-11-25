@@ -13,8 +13,8 @@
     <img src="Myntra-Emblem-768x432.png" height="50px" alt="Myntra Logo">
 
     <div class="search-box">
-        <input type="text" placeholder="Search here...">
-        <button type="button">Search</button>
+        <input type="text" id="searchInput" placeholder="Search here...">
+        <button type="button" onclick="searchProduct()">Search</button>
     </div>
 
 </div>
@@ -42,6 +42,10 @@
     border-radius: 10px;
     cursor: pointer;
 }
+
+.product-item {
+    display: inline-block;
+}
 </style>
 
     <br>
@@ -57,69 +61,172 @@
     <br>
 
     <div class="center-img">
-        <a href="1.png"><img src="1.png"></a>
-        <a href="2.png"><img src="2.png"></a>
-        <a href="3.png"><img src="3.png"></a>
-        <a href="4.png"><img src="4.png"></a>
-        <a href="5.png"><img src="5.png"></a>
-        <a href="6.png"><img src="6.png"></a>
-    </div>
 
-    <br>
-    
-    <div class="center-img">
-        <a href="7.png"><img src="7.png"></a>
-        <a href="8.png"><img src="8.png"></a>
-        <a href="9.png"><img src="9.png"></a>
-        <a href="10.png"><img src="10.png"></a>
-        <a href="11.png"><img src="11.png"></a>
-        <a href="12.png"><img src="12.png"></a>
-    </div>
+    <a href="1.png" class="product-item" data-name="men shirt">
+        <img src="1.png">
+    </a>
 
-    <br>
-    
-    <div class="center-img">
-        <a href="13.png"><img src="13.png"></a>
-        <a href="14.png"><img src="14.png"></a>
-        <a href="15.png"><img src="15.png"></a>
-        <a href="16.png"><img src="16.png"></a>
-        <a href="17.png"><img src="17.png"></a>
-        <a href="18.png"><img src="18.png"></a>
-    </div>
+    <a href="2.png" class="product-item" data-name="women dress">
+        <img src="2.png">
+    </a>
 
-    <br>
-    
-    <div class="center-img">
-        <a href="19.png"><img src="19.png"></a>
-        <a href="20.png"><img src="20.png"></a>
-        <a href="21.png"><img src="21.png"></a>
-        <a href="22.png"><img src="22.png"></a>
-        <a href="23.png"><img src="23.png"></a>
-        <a href="24.png"><img src="24.png"></a>
-    </div>
+    <a href="3.png" class="product-item" data-name="men shoes">
+        <img src="3.png">
+    </a>
 
-    <br>
-    
-    <div class="center-img">
-        <a href="25.png"><img src="25.png"></a>
-        <a href="26.png"><img src="26.png"></a>
-        <a href="27.png"><img src="27.png"></a>
-        <a href="28.png"><img src="28.png"></a>
-        <a href="29.png"><img src="29.png"></a>
-        <a href="30.png"><img src="30.png"></a>
-    </div>
+    <a href="4.png" class="product-item" data-name="women shoes">
+        <img src="4.png">
+    </a>
 
-    <br>
+    <a href="5.png" class="product-item" data-name="men jeans">
+        <img src="5.png">
+    </a>
 
-    <div class="center-img">
-        <a href="31.png"><img src="31.png"></a>
-    </div>
+    <a href="6.png" class="product-item" data-name="women jeans">
+        <img src="6.png">
+    </a>
 
-    <br>
+</div>
 
-    <div class="center-img">
-        <a href="32.png"><img src="32.png"></a>
-    </div>
+<br>
+
+<div class="center-img">
+
+    <a href="7.png" class="product-item" data-name="men t shirt">
+        <img src="7.png">
+    </a>
+
+    <a href="8.png" class="product-item" data-name="women top">
+        <img src="8.png">
+    </a>
+
+    <a href="9.png" class="product-item" data-name="men jacket">
+        <img src="9.png">
+    </a>
+
+    <a href="10.png" class="product-item" data-name="women kurti">
+        <img src="10.png">
+    </a>
+
+    <a href="11.png" class="product-item" data-name="men trousers">
+        <img src="11.png">
+    </a>
+
+    <a href="12.png" class="product-item" data-name="women trousers">
+        <img src="12.png">
+    </a>
+
+</div>
+
+<br>
+
+<div class="center-img">
+
+    <a href="13.png" class="product-item" data-name="men hoodie">
+        <img src="13.png">
+    </a>
+
+    <a href="14.png" class="product-item" data-name="women saree">
+        <img src="14.png">
+    </a>
+
+    <a href="15.png" class="product-item" data-name="men formal shirt">
+        <img src="15.png">
+    </a>
+
+    <a href="16.png" class="product-item" data-name="women blouse">
+        <img src="16.png">
+    </a>
+
+    <a href="17.png" class="product-item" data-name="men sneakers">
+        <img src="17.png">
+    </a>
+
+    <a href="18.png" class="product-item" data-name="women sandals">
+        <img src="18.png">
+    </a>
+
+</div>
+
+<br>
+
+<div class="center-img">
+
+    <a href="19.png" class="product-item" data-name="men t shirt">
+        <img src="19.png">
+    </a>
+
+    <a href="20.png" class="product-item" data-name="women top">
+        <img src="20.png">
+    </a>
+
+    <a href="21.png" class="product-item" data-name="men jeans">
+        <img src="21.png">
+    </a>
+
+    <a href="22.png" class="product-item" data-name="women jeans">
+        <img src="22.png">
+    </a>
+
+    <a href="23.png" class="product-item" data-name="men shoes">
+        <img src="23.png">
+    </a>
+
+    <a href="24.png" class="product-item" data-name="women shoes">
+        <img src="24.png">
+    </a>
+
+</div>
+
+<br>
+
+<div class="center-img">
+
+    <a href="25.png" class="product-item" data-name="men shirt">
+        <img src="25.png">
+    </a>
+
+    <a href="26.png" class="product-item" data-name="women dress">
+        <img src="26.png">
+    </a>
+
+    <a href="27.png" class="product-item" data-name="men jacket">
+        <img src="27.png">
+    </a>
+
+    <a href="28.png" class="product-item" data-name="women kurti">
+        <img src="28.png">
+    </a>
+
+    <a href="29.png" class="product-item" data-name="men sneakers">
+        <img src="29.png">
+    </a>
+
+    <a href="30.png" class="product-item" data-name="women sandals">
+        <img src="30.png">
+    </a>
+
+</div>
+
+<br>
+
+<div class="center-img">
+
+    <a href="31.png" class="product-item" data-name="men hoodie">
+        <img src="31.png">
+    </a>
+
+</div>
+
+<br>
+
+<div class="center-img">
+
+    <a href="32.png" class="product-item" data-name="women saree">
+        <img src="32.png">
+    </a>
+
+</div>
 
     <div class="office">
 
@@ -139,6 +246,8 @@
         <p>CIN: U72300KA2007PTC041799<br>
         Telephone: 080-40011450</p>
     </div>
+
+    <script src="search.js"></script>
 
 </body>
 </html>
